@@ -20,10 +20,11 @@ const SignupForm = () => {
     setUserFormData({ ...userFormData, [name]: value });
   };
 
+  const [ addUser, {error}] = useMutation(ADD_USER)
+
   const handleFormSubmit = async (event) => {
     event.preventDefault();
   
-  const [ addUser, {error}] = useMutation(ADD_USER)
 
     // check if form has everything (as per react-bootstrap docs)
     const form = event.currentTarget;
@@ -33,7 +34,7 @@ const SignupForm = () => {
     }
 
     try {
-      const response = await createUser(userFormData);
+      const response = await addUser(userFormData);
 
       if (!response.ok) {
         throw new Error('something went wrong!');
@@ -53,6 +54,10 @@ const SignupForm = () => {
       password: '',
     });
   };
+
+  if (error) {
+    return <div>Error has occured</div>
+  }
 
   return (
     <>
