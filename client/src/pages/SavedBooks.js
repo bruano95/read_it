@@ -11,7 +11,7 @@ import { getMe, deleteBook } from '../utils/API';
 import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 import { useMutation, queryMe} from "@apollo/client";
-import { REMOVE_BOOK } from "./utils/mutations";
+import { REMOVE_BOOK } from "../utils/mutations";
 
 const SavedBooks = () => {
   const {userData, error} = queryMe();
