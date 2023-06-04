@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
-  "engines":{
+  "engines": {
     "node": "18.14.2",
     "npm": "9.5.0"
   },
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.7.14",
+    "bcrypt": "^5.1.0",
     "graphql": "^16.6.0"
   }
 }
