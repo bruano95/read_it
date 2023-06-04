@@ -1,7 +1,7 @@
 {
-  "name": "googlebooks-app",
+  "name": "read_it",
   "version": "1.0.0",
-  "description": "",
+  "description": "## TABLE OF CONTENTS   - [TITLE](#TITLE)   - [DESCRIPTION](#DESCRIPTION)   - [INSTALLATION](#INSTALLATION)   - [USAGE](#USAGE)   - [LICENSE](#LICENSE)   - [CONTRIBUTION](#CONTRIBUTION)   - [TEST](#TEST)   - [GITHUB](#GITHUB)   - [EMAIL](#EMAIL)",
   "main": "server/server.js",
   "engines": {
     "node": "18.14.2",
